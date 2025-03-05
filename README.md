@@ -338,7 +338,7 @@ The output screens provide a visual representation of the user interface and int
 
 ### 1. **Create Escrow Account Screen**
    - **Description**: This screen allows users to create a new escrow account by specifying the beneficiary, deadline, and a unique seed.
-   - **Placeholder Image**: `![Create Escrow Account Screen](#)`
+   - ![Create Escrow Account Screen](assets/Create-Escrow-Account-Screen.png)
    - **Fields**:
      - **Beneficiary Address**: Input field for the beneficiary's Solana wallet address.
      - **Deadline**: Input field for the deadline (in Unix timestamp).
@@ -347,7 +347,7 @@ The output screens provide a visual representation of the user interface and int
 
 ### 2. **Deposit Funds Screen**
    - **Description**: This screen allows users to deposit SOL or SPL tokens into the escrow account.
-   - **Placeholder Image**: `![Deposit Funds Screen](#)`
+   - ![Deposit Funds Screen](assets/Deposit-Funds-Screen.png)
    - **Fields**:
      - **Escrow Account Address**: Display field showing the escrow account address.
      - **Amount**: Input field for the amount of SOL or tokens to deposit.
@@ -355,7 +355,7 @@ The output screens provide a visual representation of the user interface and int
 
 ### 3. **Check-In Screen**
    - **Description**: This screen allows users to perform a check-in to extend the deadline.
-   - **Placeholder Image**: `![Check-In Screen](#)`
+   - ![Check-In Screen](assets/Check-In-Screen.png)
    - **Fields**:
      - **Escrow Account Address**: Display field showing the escrow account address.
      - **New Deadline**: Input field for the new deadline (in Unix timestamp).
@@ -363,14 +363,14 @@ The output screens provide a visual representation of the user interface and int
 
 ### 4. **Claim Funds Screen**
    - **Description**: This screen allows beneficiaries to claim funds from the escrow account after the deadline.
-   - **Placeholder Image**: `![Claim Funds Screen](#)`
+   - ![Claim Funds Screen](assets/Claim-Funds-Screen-1.png) ![Claim Funds Screen](assets/Claim-Funds-Screen-2.png)
    - **Fields**:
      - **Escrow Account Address**: Display field showing the escrow account address.
      - **Claim Button**: Button to initiate the claim transaction.
 
 ### 5. **Cancel Escrow Screen**
    - **Description**: This screen allows the owner to cancel the escrow account and reclaim the funds.
-   - **Placeholder Image**: `![Cancel Escrow Screen](#)`
+   - ![Cancel Escrow Screen](assets/Cancel-Escrow-Screen.png)
    - **Fields**:
      - **Escrow Account Address**: Display field showing the escrow account address.
      - **Cancel Button**: Button to initiate the cancel transaction.
