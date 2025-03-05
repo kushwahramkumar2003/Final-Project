@@ -293,28 +293,8 @@ The **Entity-Relationship (ER) Diagram** visually represents the relationships b
    - Relationships:
      - A transaction is associated with an escrow account.
 
-### AI Prompt to Generate ER Diagram:
-Create an Entity-Relationship (ER) Diagram for a decentralized "dead man's switch" system on Solana. Include the following entities and relationships:
 
-User:
-
-Attributes: pubkey, wallet_address, role.
-Relationships:
-A user can create one or more escrow accounts.
-A user can be a beneficiary of one or more escrow accounts.
-Escrow Account:
-
-Attributes: owner, beneficiary, deadline, last_checkin, bump, seed.
-Relationships:
-An escrow account is created by a user (owner).
-An escrow account has one beneficiary.
-Transaction:
-
-Attributes: amount, timestamp, type.
-Relationships:
-A transaction is associated with an escrow account.
-Use a tool like Lucidchart, Draw.io, or any ER diagram generator to create the diagram.
-
+![ERD image](assets/ERD.svg)
 ---
 
 ## 4.3: DFD DIAGRAM
@@ -343,29 +323,7 @@ The **Data Flow Diagram (DFD)** illustrates how data flows through the Eternal K
    - Smart contract interactions (e.g., initialize, deposit, checkin, claim, cancel).
    - Blockchain updates (e.g., escrow account creation, fund transfers).
 
-### AI Prompt to Generate DFD Diagram:
-Create a Data Flow Diagram (DFD) for a decentralized "dead man's switch" system on Solana. Include the following components:
-
-External Entities:
-
-User: Interacts with the system to create escrow accounts, deposit funds, check in, claim funds, or cancel escrow.
-Solana Blockchain: Provides the infrastructure for executing smart contracts and storing data.
-Processes:
-
-Initialize Escrow: Creates a new escrow account with the specified deadline and beneficiary.
-Deposit Funds: Transfers funds from the user's wallet to the escrow account.
-Check-In: Updates the last check-in timestamp and extends the deadline if necessary.
-Claim Funds: Transfers funds from the escrow account to the beneficiary after the deadline.
-Cancel Escrow: Returns funds from the escrow account to the owner and deletes the escrow.
-Data Stores:
-
-Escrow Account: Stores information about the dead man's switch.
-Transaction Log: Records all transactions related to escrow accounts.
-Data Flows:
-
-User inputs (e.g., create escrow, deposit funds, check-in).
-Smart contract interactions (e.g., initialize, deposit, checkin, claim, cancel).
-Blockchain updates (e.g., escrow account creation, fund transfers).
+![DFD image](assets/dfd.svg)
 
 
 # CHAPTER 5: IMPLEMENTATION
